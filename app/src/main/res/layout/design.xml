@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/sceneryIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/scenery" />
+
+        <TextView
+            android:id="@+id/textTV"
+            android:layout_below="@id/sceneryIV"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:hint="text"
+            android:maxLines="4"/>
+
+
+        <RelativeLayout
+            android:layout_below="@id/textTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="50dp"
+            android:orientation="horizontal">
+
+          <ImageView
+              android:layout_width="50dp"
+              android:src="@drawable/like"
+              android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="60dp"
+                android:text="100k"
+                android:paddingTop="7dp"
+                android:textStyle="bold"
+                android:layout_height="40dp"/>
+
+                <ImageView
+                    android:paddingLeft="20dp"
+                    android:layout_width="50dp"
+                    android:src="@drawable/comment"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:text="80k"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="7dp"
+                    android:textStyle="bold"
+                    android:layout_height="40dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:paddingLeft="20dp"
+                android:src="@drawable/share"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="60dp"
+                android:text="20k"
+                android:paddingLeft="6dp"
+                android:paddingTop="7dp"
+                android:textStyle="bold"
+                android:layout_height="40dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
